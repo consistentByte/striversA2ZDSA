@@ -14,7 +14,12 @@ public class CountDigits {
         }
     }
 
+    public static int countDigitsUsingLog(int n) {
+        int ans = (int) (Math.log10(n) + 1);
+        return ans;
+    }
+
     public static void main(String[] args) {
-        System.out.println(countDigits(234));
+        System.out.println(countDigitsUsingLog(234));
     }
 }
